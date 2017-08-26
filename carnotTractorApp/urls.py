@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from carnotTractorApp.views import hello
+from carnotTractorApp.views import hello, current_date_time, add
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/$', hello),
+    url(r'^time/$', current_date_time),
+    url(r'^add/(\d+)/(\d+)/$', add),
 ]
