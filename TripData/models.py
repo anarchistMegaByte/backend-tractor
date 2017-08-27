@@ -5,7 +5,6 @@ class TripsInformation(models.Model):
     mileage = models.IntegerField()
     start_time = models.DateField()
     end_time = models.DateField()
-    area_covered = models.IntegerField(null=True)
     def __str__(self):
         return u'%s' % (self.mileage)
 
