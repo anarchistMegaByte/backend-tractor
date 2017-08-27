@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from carnotTractorApp.views import hello, current_date_time, add
-from TripData.views import check_query
+from TripData.views import check_query,insert_query
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^time/$', current_date_time),
     url(r'^add/(\d+)/(\d+)/$', add),
     url(r'^check_query/$', check_query),
+    url(r'^insert_query/$', insert_query),
 ]
