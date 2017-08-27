@@ -28,7 +28,7 @@ SECRET_KEY = 'l*48u*ri6+b$33#yxh41e2w7edcoer5#i2b+!9(cfx53fe+7mc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['carnot-tractor-app.herokuapp.com']
 
 
 # Application definition
